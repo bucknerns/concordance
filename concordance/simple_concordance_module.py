@@ -16,9 +16,9 @@ class ConcordanceGenerator(object):
         for line_number, line in enumerate(fp):
             line = line.strip().lower()
             for word in re.split("(\W+)", line):
-                if concordance.max_word_len < len(word):
-                    concordance.max_word_len = len(word)
                 if re.search("^[a-z]", word):
+                    if concordance.max_word_len < len(word):
+                        concordance.max_word_len = len(word)
                     concordance.add_word(word, line_number+1)
         return concordance
 
