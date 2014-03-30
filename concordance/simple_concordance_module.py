@@ -1,3 +1,7 @@
+"""
+Created by Nathan Buckner
+"""
+
 import re
 
 
@@ -30,7 +34,7 @@ class ConcordanceGenerator(object):
 
         fp.write(format_str.format(
             word=word, width=self.max_word_len+1, count=len(data),
-            data=",".join(map(str,data))))
+            data=",".join(map(str, data))))
 
     def write(self, fp):
         for word in sorted(self.concordance.keys()):

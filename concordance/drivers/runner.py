@@ -1,3 +1,7 @@
+"""
+Created by Nathan Buckner
+"""
+
 import sys
 import argparse
 from concordance import Generator
