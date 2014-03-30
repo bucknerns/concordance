@@ -24,6 +24,7 @@ class ConcordanceGenerator(object):
         self.concordance[word].append(line_number)
 
     def write_line(self, word, fp):
+        word = word.lower()
         data = self.concordance.get(word) or []
         format_str = "{word: <{width}}{{{count}:{data}}}\n"
 
