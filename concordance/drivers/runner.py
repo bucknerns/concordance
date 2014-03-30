@@ -11,7 +11,7 @@ def run():
     args = parse_args()
     concor = Generator.fromfile(args.infile)
     if args.word:
-        print concor.write_line(args.word, sys.stdout)
+        concor.write_line(args.word, sys.stdout)
     else:
         concor.write(args.outfile)
 
