@@ -20,7 +20,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=read("pip-requires").split("\n"),
-    license=read("LICENSE")
+    license=read("LICENSE"),
     classifiers=(
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
