@@ -15,7 +15,7 @@ setup(
     description="Simple concordance repo",
     long_description=read("README.md"),
     author="Nathan Buckner",
-    author_email="bucknerns@gmail.com",
+    author_email="dropbox255@gmail.com",
     url="http://github.com/bucknerns/concordance",
     packages=find_packages(),
     include_package_data=True,
